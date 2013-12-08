@@ -1,5 +1,5 @@
 # Panoramic Geometry Collection #
-**Version 1** Released Dec 7, 2013  
+**Version 1.1** Released Dec 8, 2013  
 by Andrew Hazelden
 
 ## Overview ##
@@ -37,8 +37,8 @@ The following files are included:
 > - mentalRayCube1_mesh.obj
 > - mirrorball_mesh.ma
 > - mirrorball_mesh.obj
-> - starglobe_mesh.ma
-> - starglobe_mesh.obj
+> - quadsphere_mesh.ma
+> - quadsphere_mesh.obj
 > - verticalCrossCube_mesh.ma
 > - verticalCrossCube_mesh.obj
 > - verticalStripCube_mesh.ma
@@ -46,6 +46,216 @@ The following files are included:
 > - verticalTeeCube_mesh.ma
 > - verticalTeeCube_mesh.obj                        
 
+## Image Projections ##
+
+**Angular Fisheye 360 Degree**  
+![Angular Fisheye 360 Degree](docs/screenshots/angular_360_degree_120px.png)
+
+This image projection shows a fullframe 360° fisheye image that is also known as an HDRI lightprobe.
+
+----------
+
+**Cubemap 3x2**  
+![Cubemap 3x2](docs/screenshots/cubemap3x2_120px.png)
+
+The Cubemap 3x2 faces are located in the format:
+<table>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>top</td> <td>bottom</td>
+  </tr>
+</table>
+
+----------
+
+**Cylinder**  
+![Cylinder](docs/screenshots/cylindrical_120px.png)
+
+This image projection shows a cylindrically formatted image.
+
+----------
+
+**Fulldome Angular Fisheye 180 Degree**  
+![Fulldome](docs/screenshots/fulldome180degree_120px.png)
+
+This image projection shows a fullframe 180° fisheye image that is also known as a domemaster image.
+
+----------
+
+**Horizontal Cross Cubemap**  
+![Horizontal Cross Cubemap](docs/screenshots/horizontalCross_120px.png)
+
+The horizontal cross faces are located in the format:
+
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td> <td>back</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
+</table>
+
+----------
+
+**Horizontal Strip Cubemap**  
+![Horizontal Strip Cubemap](docs/screenshots/horizontalStrip_38px.png)
+
+The horizontal strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
+  </tr>
+</table>
+
+----------
+
+**Horizontal Tee Cubemap**  
+![Horizontal Tee Cubemap](docs/screenshots/horizontalTee_120px.png)
+
+The horizontal tee faces are located in the format:
+
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
+</table>
+
+----------
+
+**Equirectangular, Latitude/Longitude,  Spherical**  
+![equirectangular](docs/screenshots/latlong_120px.png)
+
+This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.
+
+----------
+
+**Mental Ray Cube 1**  
+![Mental Ray Cube 1](docs/screenshots/mentalRayCube1_38px.png)
+
+The image projection shows a the mental ray `mib_lookup_cube1` horizontal strip image format.
+
+The faces are located in the format:
+
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>top (flipped vertically)</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+
+----------
+
+**Mirrorball**  
+![Mirrorball](docs/screenshots/mirrorball_120px.png)
+
+A mirrorball or ball map image is what you get when you photograph a chrome sphere. This image projection is common in the visual effects industry when a quick set lighting reference and environment map is needed.
+
+----------
+
+**Quadsphere**  
+![Quadsphere](docs/screenshots/quadsphere_120px.png)
+
+The quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.
+
+![Quadsphere](docs/screenshots/quadsphere_mesh.png)
+
+----------
+**Vertical Cross Cubemap**  
+![Vertical Cross Cubemap ](docs/screenshots/verticalCross_120px.png)
+
+The vertical cross faces are located in the format:
+
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
+  </tr>
+</table>
+
+----------
+**Vertical Strip Cubemap**  
+![Vertical Strip Cubemap  ](docs/screenshots/verticalStrip_120px.png)
+
+The vertical strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+
+----------
+**Vertical Tee Cubemap**  
+
+![Vertical Tee Cubemap](docs/screenshots/verticalTee_120px.png)
+
+The vertical tee faces are located in the format:
+
+<table>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>bottom</td><td>blank</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
+  </tr>
+  <tr>
+     <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
+</table>
+----------
 
 ## Closing Notes ##
 
