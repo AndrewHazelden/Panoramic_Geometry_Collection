@@ -123,13 +123,13 @@ The horizontal tee faces are located in the format:
 
 <table>
   <tr>
-    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+     <td>top</td> <td>blank</td> <td>blank</td> <td>blank</td>
   </tr>
   <tr>
     <td>front</td> <td>right</td> <td>back</td> <td>left</td>
   </tr>
   <tr>
-    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+    <td>bottom</td> <td>blank</td> <td>blank</td> <td>blank</td> 
   </tr>
 </table>
 
