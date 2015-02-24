@@ -1,5 +1,5 @@
 # Panoramic Geometry Collection #
-**Version 1.1** Released Dec 8, 2013  
+**Version 2** Released 2015-02-23
 by Andrew Hazelden
 
 ## Overview ##
@@ -37,8 +37,8 @@ The following files are included:
 > - mentalRayCube1_mesh.obj
 > - mirrorball_mesh.ma
 > - mirrorball_mesh.obj
-> - quadsphere_mesh.ma
-> - quadsphere_mesh.obj
+> - starglobe_mesh.ma
+> - starglobe_mesh.obj
 > - verticalCrossCube_mesh.ma
 > - verticalCrossCube_mesh.obj
 > - verticalStripCube_mesh.ma
@@ -179,10 +179,10 @@ A mirrorball or ball map image is what you get when you photograph a chrome sphe
 
 ----------
 
-**Quadsphere**  
+**Starglobe / Quadsphere**  
 ![Quadsphere](docs/screenshots/quadsphere_120px.png)
 
-The quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.
+The Starglobe / quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.
 
 ![Quadsphere](docs/screenshots/quadsphere_mesh.png)
 

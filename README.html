@@ -1,12 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 <title>README</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
 /* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
 /* Source: https://github.com/nicolahery/markdownpad-github */
 
 /* RESET
@@ -212,6 +212,24 @@ pre code, pre tt {
   border: none;
 }
 
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
 /* QUOTES
 =============================================================================*/
 
@@ -274,7 +292,7 @@ img {
 </head>
 <body>
 <h1>Panoramic Geometry Collection</h1>
-<p><strong>Version 1.1</strong> Released Dec 8, 2013<br />
+<p><strong>Version 2</strong> Released 2015-02-23
 by Andrew Hazelden</p>
 <h2>Overview</h2>
 <p>This is a collection of panoramic meshes that can be used to preview equirectangular, mirrorball, fulldome, cylindrical, and cubic panoramas. The meshes were created as part of the development process for the Domemaster3D shader's <a href="https://code.google.com/p/domemaster-stereo-shader/wiki/DomeViewer">DomeViewer Tool</a>.</p>
@@ -307,8 +325,8 @@ by Andrew Hazelden</p>
 <li>mentalRayCube1_mesh.obj</li>
 <li>mirrorball_mesh.ma</li>
 <li>mirrorball_mesh.obj</li>
-<li>quadsphere_mesh.ma</li>
-<li>quadsphere_mesh.obj</li>
+<li>starglobe_mesh.ma</li>
+<li>starglobe_mesh.obj</li>
 <li>verticalCrossCube_mesh.ma</li>
 <li>verticalCrossCube_mesh.obj</li>
 <li>verticalStripCube_mesh.ma</li>
@@ -415,9 +433,9 @@ by Andrew Hazelden</p>
 <img src="docs/screenshots/mirrorball_120px.png" alt="Mirrorball" /></p>
 <p>A mirrorball or ball map image is what you get when you photograph a chrome sphere. This image projection is common in the visual effects industry when a quick set lighting reference and environment map is needed.</p>
 <hr />
-<p><strong>Quadsphere</strong><br />
+<p><strong>Starglobe / Quadsphere</strong><br />
 <img src="docs/screenshots/quadsphere_120px.png" alt="Quadsphere" /></p>
-<p>The quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.</p>
+<p>The Starglobe / quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.</p>
 <p><img src="docs/screenshots/quadsphere_mesh.png" alt="Quadsphere" /></p>
 <hr />
 <p><strong>Vertical Cross Cubemap</strong><br />
