@@ -1,5 +1,5 @@
 # Panoramic Geometry Collection #
-**Version 2** Released 2015-02-23
+**Version 2.1** Released 2015-12-18  
 by Andrew Hazelden
 
 ## Overview ##
