@@ -1,5 +1,5 @@
 # Panoramic Geometry Collection #
-**Version 2.1** Released 2015-12-18  
+**Version 2.2** Released 2016-01-03  
 by Andrew Hazelden
 
 ## Overview ##
@@ -9,9 +9,6 @@ This is a collection of panoramic meshes that can be used to preview equirectang
 If you need a tool to convert imagery between the different cubic formats you should try out my [Domemaster Photoshop Actions Pack](http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/).
 
 The panoramic mesh files are released under a GPL v3 license and are available in Maya and OBJ formats:
-
-![Mesh Files](docs/screenshots/mesh-files.png)
-
 
 ## Available Meshes ##
 The following files are included:
@@ -25,6 +22,8 @@ The following files are included:
 > - fulldomeGrid_mesh.obj
 > - fulldome_mesh.ma
 > - fulldome_mesh.obj
+> - gearVRCube_mesh.ma
+> - gearVRCube_mesh.obj
 > - horizontalCrossCube_mesh.ma
 > - horizontalCrossCube_mesh.obj
 > - horizontalStripCube_mesh.ma
@@ -84,6 +83,31 @@ This image projection shows a fullframe 180° fisheye image that is also known a
 
 ----------
 
+**Gear VR**  
+![Gear VR](docs/screenshots/gearvrMono_38px.png)
+
+This image projection shows a Gear VR mono cubic image that is a special variation on the horizontal strip format.
+
+The Gear VR mono cubic faces are located in the format:
+
+<table>
+  <tr>
+   <td>Left</td> <td>Right</td> <td>Top (Rotated 180&deg;)</td> <td>Bottom (Rotated 180&deg;)</td> <td>Back</td> <td>Front</td>
+  </tr>
+</table>
+
+A Gear VR stereo document is the same Gear VR cubic format just with an "SBS" side by side stereo frame arrangement. In a Gear VR stereo image the right view is placed first, followed by the left view.
+
+The Gear VR stereo cubic faces are located in the format:
+
+<table>
+  <tr>
+   <td>R-Left</td> <td>R-Right</td> <td>R-Top (Rotated 180&deg;)</td> <td>R-Bottom (Rotated 180&deg;)</td> <td>R-Back</td> <td>R-Front</td> <td>L-Left</td> <td>L-Right</td> <td>L-Top (Rotated 180&deg;)</td> <td>L-Bottom (Rotated 180&deg;)</td> <td>L-Back</td> <td>L-Front</td>
+  </tr>
+</table>
+
+----------
+
 **Horizontal Cross Cubemap**  
 ![Horizontal Cross Cubemap](docs/screenshots/horizontalCross_120px.png)
 
@@ -129,7 +153,7 @@ The horizontal tee faces are located in the format:
     <td>front</td> <td>right</td> <td>back</td> <td>left</td>
   </tr>
   <tr>
-    <td>bottom</td> <td>blank</td> <td>blank</td> <td>blank</td> 
+    <td>bottom</td> <td>blank</td> <td>blank</td> <td>blank</td>
   </tr>
 </table>
 
@@ -249,7 +273,7 @@ The vertical tee faces are located in the format:
      <td>blank</td> <td>bottom</td><td>blank</td>
   </tr>
   <tr>
-     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
+     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
   </tr>
   <tr>
      <td>blank</td> <td>top</td> <td>blank</td>
@@ -259,7 +283,7 @@ The vertical tee faces are located in the format:
 
 ## Closing Notes ##
 
-I hope you find these mesh files useful for your VR/Pano/Fulldome projects. If you have any questions, feel free to contact me via email or twitter. 
+I hope you find these mesh files useful for your VR/Pano/Fulldome projects. If you have any questions, feel free to contact me via email or twitter.
 
 Cheers,  
 Andrew Hazelden

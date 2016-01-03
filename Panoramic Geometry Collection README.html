@@ -292,13 +292,12 @@ img {
 </head>
 <body>
 <h1>Panoramic Geometry Collection</h1>
-<p><strong>Version 2.1</strong> Released 2015-12-18<br />
+<p><strong>Version 2.2</strong> Released 2016-01-03<br />
 by Andrew Hazelden</p>
 <h2>Overview</h2>
 <p>This is a collection of panoramic meshes that can be used to preview equirectangular, mirrorball, fulldome, cylindrical, and cubic panoramas. The meshes were created as part of the development process for the Domemaster3D shader's <a href="https://code.google.com/p/domemaster-stereo-shader/wiki/DomeViewer">DomeViewer Tool</a>.</p>
 <p>If you need a tool to convert imagery between the different cubic formats you should try out my <a href="http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/">Domemaster Photoshop Actions Pack</a>.</p>
 <p>The panoramic mesh files are released under a GPL v3 license and are available in Maya and OBJ formats:</p>
-<p><img src="docs/screenshots/mesh-files.png" alt="Mesh Files" /></p>
 <h2>Available Meshes</h2>
 <p>The following files are included:</p>
 <blockquote>
@@ -313,6 +312,8 @@ by Andrew Hazelden</p>
 <li>fulldomeGrid_mesh.obj</li>
 <li>fulldome_mesh.ma</li>
 <li>fulldome_mesh.obj</li>
+<li>gearVRCube_mesh.ma</li>
+<li>gearVRCube_mesh.obj</li>
 <li>horizontalCrossCube_mesh.ma</li>
 <li>horizontalCrossCube_mesh.obj</li>
 <li>horizontalStripCube_mesh.ma</li>
@@ -361,6 +362,23 @@ by Andrew Hazelden</p>
 <img src="docs/screenshots/fulldome180degree_120px.png" alt="Fulldome" /></p>
 <p>This image projection shows a fullframe 180° fisheye image that is also known as a domemaster image.</p>
 <hr />
+<p><strong>Gear VR</strong><br />
+<img src="docs/screenshots/gearvrMono_38px.png" alt="Gear VR" /></p>
+<p>This image projection shows a Gear VR mono cubic image that is a special variation on the horizontal strip format.</p>
+<p>The Gear VR mono cubic faces are located in the format:</p>
+<table>
+  <tr>
+   <td>Left</td> <td>Right</td> <td>Top (Rotated 180&deg;)</td> <td>Bottom (Rotated 180&deg;)</td> <td>Back</td> <td>Front</td>
+  </tr>
+</table>
+<p>A Gear VR stereo document is the same Gear VR cubic format just with an &quot;SBS&quot; side by side stereo frame arrangement. In a Gear VR stereo image the right view is placed first, followed by the left view.</p>
+<p>The Gear VR stereo cubic faces are located in the format:</p>
+<table>
+  <tr>
+   <td>R-Left</td> <td>R-Right</td> <td>R-Top (Rotated 180&deg;)</td> <td>R-Bottom (Rotated 180&deg;)</td> <td>R-Back</td> <td>R-Front</td> <td>L-Left</td> <td>L-Right</td> <td>L-Top (Rotated 180&deg;)</td> <td>L-Bottom (Rotated 180&deg;)</td> <td>L-Back</td> <td>L-Front</td>
+  </tr>
+</table>
+<hr />
 <p><strong>Horizontal Cross Cubemap</strong><br />
 <img src="docs/screenshots/horizontalCross_120px.png" alt="Horizontal Cross Cubemap" /></p>
 <p>The horizontal cross faces are located in the format:</p>
@@ -396,7 +414,7 @@ by Andrew Hazelden</p>
     <td>front</td> <td>right</td> <td>back</td> <td>left</td>
   </tr>
   <tr>
-    <td>bottom</td> <td>blank</td> <td>blank</td> <td>blank</td> 
+    <td>bottom</td> <td>blank</td> <td>blank</td> <td>blank</td>
   </tr>
 </table>
 <hr />
@@ -480,7 +498,8 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Vertical Tee Cubemap</strong>  </p>
+<p><strong>Vertical Tee Cubemap</strong>  
+</p>
 <p><img src="docs/screenshots/verticalTee_120px.png" alt="Vertical Tee Cubemap" /></p>
 <p>The vertical tee faces are located in the format:</p>
 <table>
@@ -491,7 +510,7 @@ by Andrew Hazelden</p>
      <td>blank</td> <td>bottom</td><td>blank</td>
   </tr>
   <tr>
-     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
+     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
   </tr>
   <tr>
      <td>blank</td> <td>top</td> <td>blank</td>
@@ -499,7 +518,7 @@ by Andrew Hazelden</p>
 </table>
 <hr />
 <h2>Closing Notes</h2>
-<p>I hope you find these mesh files useful for your VR/Pano/Fulldome projects. If you have any questions, feel free to contact me via email or twitter. </p>
+<p>I hope you find these mesh files useful for your VR/Pano/Fulldome projects. If you have any questions, feel free to contact me via email or twitter.</p>
 <p>Cheers,<br />
 Andrew Hazelden</p>
 <p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a> <br />
