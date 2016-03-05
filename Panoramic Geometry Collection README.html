@@ -292,7 +292,7 @@ img {
 </head>
 <body>
 <h1>Panoramic Geometry Collection</h1>
-<p><strong>Version 2.2</strong> Released 2016-01-03<br />
+<p><strong>Version 3</strong> Released 2016-03-05
 by Andrew Hazelden</p>
 <h2>Overview</h2>
 <p>This is a collection of panoramic meshes that can be used to preview equirectangular, mirrorball, fulldome, cylindrical, and cubic panoramas. The meshes were created as part of the development process for the Domemaster3D shader's <a href="https://code.google.com/p/domemaster-stereo-shader/wiki/DomeViewer">DomeViewer Tool</a>.</p>
@@ -308,6 +308,8 @@ by Andrew Hazelden</p>
 <li>cube3x2_mesh.obj</li>
 <li>cylinder_mesh.ma</li>
 <li>cylinder_mesh.obj</li>
+<li>facebookCube3x2_mesh.ma</li>
+<li>facebookCube3x2_mesh.obj</li>
 <li>fulldomeGrid_mesh.ma</li>
 <li>fulldomeGrid_mesh.obj</li>
 <li>fulldome_mesh.ma</li>
@@ -326,6 +328,8 @@ by Andrew Hazelden</p>
 <li>mentalRayCube1_mesh.obj</li>
 <li>mirrorball_mesh.ma</li>
 <li>mirrorball_mesh.obj</li>
+<li>ricoh<em>theta</em>s_mesh.ma</li>
+<li>ricoh<em>theta</em>s_mesh.obj</li>
 <li>starglobe_mesh.ma</li>
 <li>starglobe_mesh.obj</li>
 <li>verticalCrossCube_mesh.ma</li>
@@ -338,12 +342,26 @@ by Andrew Hazelden</p>
 </ul>
 </blockquote>
 <h2>Image Projections</h2>
-<p><strong>Angular Fisheye 360 Degree</strong><br />
-<img src="docs/screenshots/angular_360_degree_120px.png" alt="Angular Fisheye 360 Degree" /></p>
+<p><strong>Angular Fisheye 360 Degree</strong>  
+</p>
+<p><img src="docs/screenshots/angular_360_degree_120px.png" alt="Angular Fisheye 360 Degree" /></p>
 <p>This image projection shows a fullframe 360° fisheye image that is also known as an HDRI lightprobe.</p>
 <hr />
-<p><strong>Cubemap 3x2</strong><br />
-<img src="docs/screenshots/cubemap3x2_120px.png" alt="Cubemap 3x2" /></p>
+<p><strong>Blender Cubemap 3x2</strong>  
+</p>
+<p>The Blender Cubemap 3x2 faces are located in the format:</p>
+<table>
+  <tr>
+    <td>left</td> <td>back</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom</td> <td>top</td> <td>front</td>
+  </tr>
+</table>
+<hr />
+<p><strong>Cubemap 3x2</strong>  
+</p>
+<p><img src="docs/screenshots/cubemap3x2_120px.png" alt="Cubemap 3x2" /></p>
 <p>The Cubemap 3x2 faces are located in the format:</p>
 <table>
   <tr>
@@ -354,16 +372,32 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Cylinder</strong><br />
-<img src="docs/screenshots/cylindrical_120px.png" alt="Cylinder" /></p>
+<p><strong>Cylinder</strong>  
+</p>
+<p><img src="docs/screenshots/cylindrical_120px.png" alt="Cylinder" /></p>
 <p>This image projection shows a cylindrically formatted image.</p>
 <hr />
-<p><strong>Fulldome Angular Fisheye 180 Degree</strong><br />
-<img src="docs/screenshots/fulldome180degree_120px.png" alt="Fulldome" /></p>
+<p><strong>Facebook Cubemap 3x2</strong>  
+</p>
+<p><img src="docs/screenshots/facebookCubemap3x2_120px.png" alt="Facebook Cubemap 3x2" /></p>
+<p>The Facebook Cubemap 3x2 faces are located in the format:</p>
+<table>
+  <tr>
+    <td>right</td> <td>left</td> <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td> <td>front</td> <td>back</td>
+  </tr>
+</table>
+<hr />
+<p><strong>Fulldome Angular Fisheye 180 Degree</strong>  
+</p>
+<p><img src="docs/screenshots/fulldome180degree_120px.png" alt="Fulldome" /></p>
 <p>This image projection shows a fullframe 180° fisheye image that is also known as a domemaster image.</p>
 <hr />
-<p><strong>Gear VR</strong><br />
-<img src="docs/screenshots/gearvrMono_38px.png" alt="Gear VR" /></p>
+<p><strong>Gear VR</strong>  
+</p>
+<p><img src="docs/screenshots/gearvrMono_38px.png" alt="Gear VR" /></p>
 <p>This image projection shows a Gear VR mono cubic image that is a special variation on the horizontal strip format.</p>
 <p>The Gear VR mono cubic faces are located in the format:</p>
 <table>
@@ -379,8 +413,9 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Cross Cubemap</strong><br />
-<img src="docs/screenshots/horizontalCross_120px.png" alt="Horizontal Cross Cubemap" /></p>
+<p><strong>Horizontal Cross Cubemap</strong>  
+</p>
+<p><img src="docs/screenshots/horizontalCross_120px.png" alt="Horizontal Cross Cubemap" /></p>
 <p>The horizontal cross faces are located in the format:</p>
 <table>
   <tr>
@@ -394,8 +429,9 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Strip Cubemap</strong><br />
-<img src="docs/screenshots/horizontalStrip_38px.png" alt="Horizontal Strip Cubemap" /></p>
+<p><strong>Horizontal Strip Cubemap</strong>  
+</p>
+<p><img src="docs/screenshots/horizontalStrip_38px.png" alt="Horizontal Strip Cubemap" /></p>
 <p>The horizontal strip faces are located in the format:</p>
 <table>
   <tr>
@@ -403,8 +439,9 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Tee Cubemap</strong><br />
-<img src="docs/screenshots/horizontalTee_120px.png" alt="Horizontal Tee Cubemap" /></p>
+<p><strong>Horizontal Tee Cubemap</strong>  
+</p>
+<p><img src="docs/screenshots/horizontalTee_120px.png" alt="Horizontal Tee Cubemap" /></p>
 <p>The horizontal tee faces are located in the format:</p>
 <table>
   <tr>
@@ -418,12 +455,14 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Equirectangular, Latitude/Longitude,  Spherical</strong><br />
-<img src="docs/screenshots/latlong_120px.png" alt="equirectangular" /></p>
+<p><strong>Equirectangular, Latitude/Longitude,  Spherical</strong>  
+</p>
+<p><img src="docs/screenshots/latlong_120px.png" alt="equirectangular" /></p>
 <p>This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.</p>
 <hr />
-<p><strong>Mental Ray Cube 1</strong><br />
-<img src="docs/screenshots/mentalRayCube1_38px.png" alt="Mental Ray Cube 1" /></p>
+<p><strong>Mental Ray Cube 1</strong>  
+</p>
+<p><img src="docs/screenshots/mentalRayCube1_38px.png" alt="Mental Ray Cube 1" /></p>
 <p>The image projection shows a the mental ray <code>mib_lookup_cube1</code> horizontal strip image format.</p>
 <p>The faces are located in the format:</p>
 <table>
@@ -447,17 +486,25 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Mirrorball</strong><br />
-<img src="docs/screenshots/mirrorball_120px.png" alt="Mirrorball" /></p>
+<p><strong>Mirrorball</strong>  
+</p>
+<p><img src="docs/screenshots/mirrorball_120px.png" alt="Mirrorball" /></p>
 <p>A mirrorball or ball map image is what you get when you photograph a chrome sphere. This image projection is common in the visual effects industry when a quick set lighting reference and environment map is needed.</p>
 <hr />
-<p><strong>Starglobe / Quadsphere</strong><br />
-<img src="docs/screenshots/quadsphere_120px.png" alt="Quadsphere" /></p>
+<p><strong>Ricoh Theta S</strong></p>
+<p><img src="docs/screenshots/ricohThetaS_120px.png" alt="Ricoh Theta S" /></p>
+<p>The Ricoh Theta S camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.</p>
+<p>The camera saves the raw unstitched video in a side by side face arrangement to a 1920x1080 pixel sized video format at 30 frame per second.</p>
+<hr />
+<p><strong>Starglobe / Quadsphere</strong>  
+</p>
+<p><img src="docs/screenshots/quadsphere_120px.png" alt="Quadsphere" /></p>
 <p>The Starglobe / quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.</p>
 <p><img src="docs/screenshots/quadsphere_mesh.png" alt="Quadsphere" /></p>
 <hr />
-<p><strong>Vertical Cross Cubemap</strong><br />
-<img src="docs/screenshots/verticalCross_120px.png" alt="Vertical Cross Cubemap " /></p>
+<p><strong>Vertical Cross Cubemap</strong>  
+</p>
+<p><img src="docs/screenshots/verticalCross_120px.png" alt="Vertical Cross Cubemap " /></p>
 <p>The vertical cross faces are located in the format:</p>
 <table>
   <tr>
@@ -474,8 +521,9 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Vertical Strip Cubemap</strong><br />
-<img src="docs/screenshots/verticalStrip_120px.png" alt="Vertical Strip Cubemap  " /></p>
+<p><strong>Vertical Strip Cubemap</strong>  
+</p>
+<p><img src="docs/screenshots/verticalStrip_120px.png" alt="Vertical Strip Cubemap  " /></p>
 <p>The vertical strip faces are located in the format:</p>
 <table>
   <tr>

@@ -1,5 +1,5 @@
 # Panoramic Geometry Collection #
-**Version 2.2** Released 2016-01-03  
+**Version 3** Released 2016-03-05
 by Andrew Hazelden
 
 ## Overview ##
@@ -18,6 +18,8 @@ The following files are included:
 > - cube3x2_mesh.obj
 > - cylinder_mesh.ma
 > - cylinder_mesh.obj
+> - facebookCube3x2_mesh.ma
+> - facebookCube3x2_mesh.obj
 > - fulldomeGrid_mesh.ma
 > - fulldomeGrid_mesh.obj
 > - fulldome_mesh.ma
@@ -36,6 +38,8 @@ The following files are included:
 > - mentalRayCube1_mesh.obj
 > - mirrorball_mesh.ma
 > - mirrorball_mesh.obj
+> - ricoh_theta_s_mesh.ma
+> - ricoh_theta_s_mesh.obj
 > - starglobe_mesh.ma
 > - starglobe_mesh.obj
 > - verticalCrossCube_mesh.ma
@@ -48,13 +52,29 @@ The following files are included:
 ## Image Projections ##
 
 **Angular Fisheye 360 Degree**  
+
 ![Angular Fisheye 360 Degree](docs/screenshots/angular_360_degree_120px.png)
 
 This image projection shows a fullframe 360° fisheye image that is also known as an HDRI lightprobe.
 
 ----------
 
+**Blender Cubemap 3x2**  
+
+The Blender Cubemap 3x2 faces are located in the format:
+<table>
+  <tr>
+    <td>left</td> <td>back</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom</td> <td>top</td> <td>front</td>
+  </tr>
+</table>
+
+----------
+
 **Cubemap 3x2**  
+
 ![Cubemap 3x2](docs/screenshots/cubemap3x2_120px.png)
 
 The Cubemap 3x2 faces are located in the format:
@@ -70,13 +90,32 @@ The Cubemap 3x2 faces are located in the format:
 ----------
 
 **Cylinder**  
+
 ![Cylinder](docs/screenshots/cylindrical_120px.png)
 
 This image projection shows a cylindrically formatted image.
 
 ----------
 
+**Facebook Cubemap 3x2**  
+
+![Facebook Cubemap 3x2](docs/screenshots/facebookCubemap3x2_120px.png)
+
+The Facebook Cubemap 3x2 faces are located in the format:
+
+<table>
+  <tr>
+    <td>right</td> <td>left</td> <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td> <td>front</td> <td>back</td>
+  </tr>
+</table>
+
+----
+
 **Fulldome Angular Fisheye 180 Degree**  
+
 ![Fulldome](docs/screenshots/fulldome180degree_120px.png)
 
 This image projection shows a fullframe 180° fisheye image that is also known as a domemaster image.
@@ -84,6 +123,7 @@ This image projection shows a fullframe 180° fisheye image that is also known a
 ----------
 
 **Gear VR**  
+
 ![Gear VR](docs/screenshots/gearvrMono_38px.png)
 
 This image projection shows a Gear VR mono cubic image that is a special variation on the horizontal strip format.
@@ -109,6 +149,7 @@ The Gear VR stereo cubic faces are located in the format:
 ----------
 
 **Horizontal Cross Cubemap**  
+
 ![Horizontal Cross Cubemap](docs/screenshots/horizontalCross_120px.png)
 
 The horizontal cross faces are located in the format:
@@ -128,6 +169,7 @@ The horizontal cross faces are located in the format:
 ----------
 
 **Horizontal Strip Cubemap**  
+
 ![Horizontal Strip Cubemap](docs/screenshots/horizontalStrip_38px.png)
 
 The horizontal strip faces are located in the format:
@@ -141,6 +183,7 @@ The horizontal strip faces are located in the format:
 ----------
 
 **Horizontal Tee Cubemap**  
+
 ![Horizontal Tee Cubemap](docs/screenshots/horizontalTee_120px.png)
 
 The horizontal tee faces are located in the format:
@@ -160,6 +203,7 @@ The horizontal tee faces are located in the format:
 ----------
 
 **Equirectangular, Latitude/Longitude,  Spherical**  
+
 ![equirectangular](docs/screenshots/latlong_120px.png)
 
 This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.
@@ -167,6 +211,7 @@ This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.
 ----------
 
 **Mental Ray Cube 1**  
+
 ![Mental Ray Cube 1](docs/screenshots/mentalRayCube1_38px.png)
 
 The image projection shows a the mental ray `mib_lookup_cube1` horizontal strip image format.
@@ -197,13 +242,25 @@ The faces are located in the format:
 ----------
 
 **Mirrorball**  
+
 ![Mirrorball](docs/screenshots/mirrorball_120px.png)
 
 A mirrorball or ball map image is what you get when you photograph a chrome sphere. This image projection is common in the visual effects industry when a quick set lighting reference and environment map is needed.
 
 ----------
 
+**Ricoh Theta S**
+
+![Ricoh Theta S](docs/screenshots/ricohThetaS_120px.png)
+
+The Ricoh Theta S camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.
+
+The camera saves the raw unstitched video in a side by side face arrangement to a 1920x1080 pixel sized video format at 30 frame per second.
+
+----------
+
 **Starglobe / Quadsphere**  
+
 ![Quadsphere](docs/screenshots/quadsphere_120px.png)
 
 The Starglobe / quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.
@@ -211,7 +268,9 @@ The Starglobe / quadsphere format is a custom polygon sphere that avoids the iss
 ![Quadsphere](docs/screenshots/quadsphere_mesh.png)
 
 ----------
+
 **Vertical Cross Cubemap**  
+
 ![Vertical Cross Cubemap ](docs/screenshots/verticalCross_120px.png)
 
 The vertical cross faces are located in the format:
@@ -232,7 +291,9 @@ The vertical cross faces are located in the format:
 </table>
 
 ----------
+
 **Vertical Strip Cubemap**  
+
 ![Vertical Strip Cubemap  ](docs/screenshots/verticalStrip_120px.png)
 
 The vertical strip faces are located in the format:
@@ -259,6 +320,7 @@ The vertical strip faces are located in the format:
 </table>
 
 ----------
+
 **Vertical Tee Cubemap**  
 
 ![Vertical Tee Cubemap](docs/screenshots/verticalTee_120px.png)
@@ -279,6 +341,7 @@ The vertical tee faces are located in the format:
      <td>blank</td> <td>top</td> <td>blank</td>
   </tr>
 </table>
+
 ----------
 
 ## Closing Notes ##
