@@ -1,5 +1,6 @@
 # Panoramic Geometry Collection #
-**Version 3** Released 2016-03-05
+
+**Version 3.1** Released 2016-05-05 
 by Andrew Hazelden
 
 ## Overview ##
@@ -12,6 +13,7 @@ The panoramic mesh files are released under a GPL v3 license and are available i
 
 ## Available Meshes ##
 The following files are included:
+
 > - angular360_mesh.ma
 > - angular360_mesh.obj
 > - cube3x2_mesh.ma
@@ -20,6 +22,8 @@ The following files are included:
 > - cylinder_mesh.obj
 > - facebookCube3x2_mesh.ma
 > - facebookCube3x2_mesh.obj
+> - facebookPyramid_mesh.ma
+> - facebookPyramid_mesh.obj
 > - fulldomeGrid_mesh.ma
 > - fulldomeGrid_mesh.obj
 > - fulldome_mesh.ma
@@ -112,7 +116,15 @@ The Facebook Cubemap 3x2 faces are located in the format:
   </tr>
 </table>
 
-----
+----------
+
+**Facebook Pyramid**  
+
+![Facebook Pyramid](docs/screenshots/facebookPyramid_120px.png)
+
+This image projection fits an unfolded 4 sided polygon pyramid into the full surface area of a square 0-1 UV space. The front view of the panoramic image fills the base region of the pyramid.
+
+----------
 
 **Fulldome Angular Fisheye 180 Degree**  
 
