@@ -1,6 +1,6 @@
 # Panoramic Geometry Collection #
 
-**Version 3.1** Released 2016-05-05 
+**Version 3.2** Released 2016-06-25 
 by Andrew Hazelden
 
 ## Overview ##
@@ -38,12 +38,16 @@ The following files are included:
 > - horizontalTeeCube_mesh.obj
 > - latlongSphere_mesh.ma
 > - latlongSphere_mesh.obj
+> - lg360_mesh.ma
+> - lg360_mesh.obj
 > - mentalRayCube1_mesh.ma
 > - mentalRayCube1_mesh.obj
 > - mirrorball_mesh.ma
 > - mirrorball_mesh.obj
 > - ricoh_theta_s_mesh.ma
 > - ricoh_theta_s_mesh.obj
+> - samsungGear360_mesh.ma
+> - samsungGear360_mesh.obj
 > - starglobe_mesh.ma
 > - starglobe_mesh.obj
 > - verticalCrossCube_mesh.ma
@@ -220,6 +224,17 @@ The horizontal tee faces are located in the format:
 
 This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.
 
+
+----------
+
+**LG360 Camera**
+
+![LG360](docs/screenshots/lg360_120px.png)
+
+The LG360 Camera camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.
+
+The camera saves the raw unstitched video in a side by side face arrangement at 30 frame per second.
+
 ----------
 
 **Mental Ray Cube 1**  
@@ -261,13 +276,23 @@ A mirrorball or ball map image is what you get when you photograph a chrome sphe
 
 ----------
 
-**Ricoh Theta S**
+**Ricoh Theta S Camera**
 
 ![Ricoh Theta S](docs/screenshots/ricohThetaS_120px.png)
 
 The Ricoh Theta S camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.
 
 The camera saves the raw unstitched video in a side by side face arrangement to a 1920x1080 pixel sized video format at 30 frame per second.
+
+----------
+
+**Samsung Gear 360 Camera**
+
+![Samsung Gear 360](docs/screenshots/samsung_gear_360_120px.png)
+
+The Samsung Gear 360 camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.
+
+The camera saves the raw unstitched video in a side by side face arrangement at 30 frame per second.
 
 ----------
 
