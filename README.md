@@ -1,6 +1,6 @@
 # Panoramic Geometry Collection #
 
-**Version 3.2** Released 2016-06-25 
+**Version 3.3** Released 2016-08-23 
 by Andrew Hazelden
 
 ## Overview ##
