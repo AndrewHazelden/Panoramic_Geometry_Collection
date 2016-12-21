@@ -1,6 +1,6 @@
 # Panoramic Geometry Collection #
 
-**Version 3.3** Released 2016-08-23 
+**Version 3.4** Released 2016-12-21  
 by Andrew Hazelden
 
 ## Overview ##
@@ -127,6 +127,35 @@ The Facebook Cubemap 3x2 faces are located in the format:
 ![Facebook Pyramid](docs/screenshots/facebookPyramid_120px.png)
 
 This image projection fits an unfolded 4 sided polygon pyramid into the full surface area of a square 0-1 UV space. The front view of the panoramic image fills the base region of the pyramid.
+
+----------
+
+**Facebook Vertical Strip**  
+
+![Facebook Vertical](docs/screenshots/facebookVerticalStrip_120px.jpg)
+
+The Facebook vertical strip faces are all flipped horizontally and located in the format:
+
+<table>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top (Rotated 180&deg;)</td>
+  </tr>
+  <tr>
+    <td>bottom (Rotated 180&deg;)</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
 
 ----------
 
