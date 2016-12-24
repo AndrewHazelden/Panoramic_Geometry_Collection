@@ -1,6 +1,6 @@
 # Panoramic Geometry Collection #
 
-**Version 3.4** Released 2016-12-21  
+**Version 3.4** Released 2016-12-23  
 by Andrew Hazelden
 
 ## Overview ##
@@ -24,10 +24,17 @@ The following files are included:
 > - `facebookCube3x2_mesh.obj`
 > - `facebookPyramid_mesh.ma`
 > - `facebookPyramid_mesh.obj`
-> - `fulldomeGrid_mesh.ma`
-> - `fulldomeGrid_mesh.obj`
+> - `facebookVerticalStripCube_mesh.ma`
+> - `facebookVerticalStripCube_mesh.obj`
+> - `fulldome_mesh_smoothed.ma`
+> - `fulldome_mesh_smoothed.obj`
 > - `fulldome_mesh.ma`
 > - `fulldome_mesh.obj`
+> - `fulldome_quads_4_3_mesh.ma`
+> - `fulldome_quads_16_9_mesh.ma`
+> - `fulldome_quads_mesh.ma`
+> - `fulldomeGrid_mesh.ma`
+> - `fulldomeGrid_mesh.obj`
 > - `gearVRCube_mesh.ma`
 > - `gearVRCube_mesh.obj`
 > - `horizontalCrossCube_mesh.ma`
@@ -55,7 +62,8 @@ The following files are included:
 > - `verticalStripCube_mesh.ma`
 > - `verticalStripCube_mesh.obj`
 > - `verticalTeeCube_mesh.ma`
-> - `verticalTeeCube_mesh.obj`                        
+> - `verticalTeeCube_mesh.obj`
+                     
 
 ## Image Projections ##
 
