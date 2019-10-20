@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>README</title>
+<title>Documentation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
-/* Source: https://github.com/nicolahery/markdownpad-github */
+/* Stylesheet for Markdown */
 
 /* RESET
 =============================================================================*/
@@ -21,12 +18,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* BODY
 =============================================================================*/
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/SourceCodePro-Regular.ttf');
+}
+
+@import url("fonts/font-awesome.min.css");
+
 body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #1C1C1C;
   padding: 20px;
   max-width: 960px;
   margin: 0 auto;
@@ -45,6 +58,8 @@ body>*:last-child {
 
 p, blockquote, ul, ol, dl, table, pre {
   margin: 15px 0;
+  color: #AAAAAA;
+  /* color: #7D8686; */
 }
 
 /* HEADERS
@@ -63,30 +78,42 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 
 h1 {
   font-size: 28px;
-  color: #000;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid #D0D0D0;
+  color: #D0D0D0;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 400;
+  color: #D0D0D0;
 }
 
 h4 {
   font-size: 16px;
+  color: #D0D0D0;
 }
 
 h5 {
   font-size: 14px;
+  color: #D0D0D0;
 }
 
 h6 {
-  color: #777;
   font-size: 14px;
+  color: #D0D0D0;
+}
+
+h7 {
+  font-size: 14px;
+  color: #D0D0D0;
+  /* color: #277BA5; */
 }
 
 body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
@@ -120,6 +147,7 @@ a:hover {
 
 ul, ol {
   padding-left: 30px;
+  color: #C4C4C4;
 }
 
 ul li > :first-child, 
@@ -177,15 +205,16 @@ dl dd>:last-child {
 
 pre, code, tt {
   font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 code, tt {
   margin: 0 0px;
   padding: 0px 0px;
   white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
+  border: 1px solid #262626;
+  background-color: #363636;
+  color: #D0D0D0;
   border-radius: 3px;
 }
 
@@ -198,8 +227,8 @@ pre>code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #363636;
+  border: 1px solid #262626;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -225,7 +254,7 @@ kbd {
     border-radius: 2px 2px 2px 2px;
     border-style: solid;
     border-width: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
     line-height: 10px;
     padding: 1px 4px;
 }
@@ -269,34 +298,35 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
+  /* border: 1px solid #ccc; */ 
+  /* padding: 6px 13px; */ 
 }
 
 table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
+  /* border-top: 1px solid #ccc; */
+  /* background-color: #363636; */
+  /* color: #D0D0D0; */
 }
 
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
 
 /* IMAGES
 =============================================================================*/
 
 img {
-  max-width: 100%
+  max-width: 80%;
+  /* max-width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 </head>
-<body>
-<h1>Panoramic Geometry Collection</h1>
-<p><strong>Version 3.4</strong> Released 2017-01-01 
+<body><h1>Panoramic Geometry Collection</h1>
+<p><strong>Version 4</strong> Released 2019-10-20<br />
 by Andrew Hazelden</p>
 <h2>Overview</h2>
 <p>This is a collection of panoramic meshes that can be used to preview equirectangular, mirrorball, fulldome, cylindrical, and cubic panoramas. The meshes were created as part of the development process for the Domemaster3D shader's <a href="https://code.google.com/p/domemaster-stereo-shader/wiki/DomeViewer">DomeViewer Tool</a>.</p>
-<p>If you need a tool to convert imagery between the different cubic formats you should try out my <a href="http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/">Domemaster Photoshop Actions Pack</a>, or for video clips you can explore my <a href="http://www.andrewhazelden.com/blog/downloads/domemaster-fusion-macros/">Domemaster Fusion Macros</a> toolset.</p>
+<p>If you need a tool to convert imagery between the different cubic formats you should try out my (free) <a href="http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/">Domemaster Photoshop Actions Pack</a>, or for video clips you can explore my (free) <a href="http://www.andrewhazelden.com/projects/kartavr/docs/">KartaVR for Resolve/Fusion</a> toolset.</p>
 <p>The panoramic mesh files are released under a GPL v3 license and are available in Maya and OBJ formats:</p>
 <h2>Available Meshes</h2>
 <p>The following files are included:</p>
@@ -351,16 +381,15 @@ by Andrew Hazelden</p>
 <li><code>verticalStripCube_mesh.obj</code></li>
 <li><code>verticalTeeCube_mesh.ma</code></li>
 <li><code>verticalTeeCube_mesh.obj</code></li>
+<li><code>youtube_cubemap3x2_mesh.obj</code></li>
 </ul>
 </blockquote>
 <h2>Image Projections</h2>
-<p><strong>Angular Fisheye 360 Degree</strong>  
-</p>
+<p><strong>Angular Fisheye 360 Degree</strong></p>
 <p><img src="docs/screenshots/angular_360_degree_120px.png" alt="Angular Fisheye 360 Degree" /></p>
 <p>This image projection shows a fullframe 360° fisheye image that is also known as an HDRI lightprobe.</p>
 <hr />
-<p><strong>Blender Cubemap 3x2</strong>  
-</p>
+<p><strong>Blender Cubemap 3x2</strong></p>
 <p>The Blender Cubemap 3x2 faces are located in the format:</p>
 <table>
   <tr>
@@ -371,8 +400,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Cubemap 3x2</strong>  
-</p>
+<p><strong>Cubemap 3x2</strong></p>
 <p><img src="docs/screenshots/cubemap3x2_120px.png" alt="Cubemap 3x2" /></p>
 <p>The Cubemap 3x2 faces are located in the format:</p>
 <table>
@@ -384,13 +412,11 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Cylinder</strong>  
-</p>
+<p><strong>Cylinder</strong></p>
 <p><img src="docs/screenshots/cylindrical_120px.png" alt="Cylinder" /></p>
 <p>This image projection shows a cylindrically formatted image.</p>
 <hr />
-<p><strong>Facebook Cubemap 3x2</strong>  
-</p>
+<p><strong>Facebook Cubemap 3x2</strong></p>
 <p><img src="docs/screenshots/facebookCubemap3x2_120px.png" alt="Facebook Cubemap 3x2" /></p>
 <p>The Facebook Cubemap 3x2 faces are located in the format:</p>
 <table>
@@ -402,13 +428,11 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Facebook Pyramid</strong>  
-</p>
+<p><strong>Facebook Pyramid</strong></p>
 <p><img src="docs/screenshots/facebookPyramid_120px.png" alt="Facebook Pyramid" /></p>
 <p>This image projection fits an unfolded 4 sided polygon pyramid into the full surface area of a square 0-1 UV space. The front view of the panoramic image fills the base region of the pyramid.</p>
 <hr />
-<p><strong>Facebook Vertical Strip</strong>  
-</p>
+<p><strong>Facebook Vertical Strip</strong></p>
 <p><img src="docs/screenshots/facebookVerticalStrip_120px.jpg" alt="Facebook Vertical" /></p>
 <p>The Facebook vertical strip faces are all flipped horizontally and located in the format:</p>
 <table>
@@ -432,13 +456,11 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Fulldome Angular Fisheye 180 Degree</strong>  
-</p>
+<p><strong>Fulldome Angular Fisheye 180 Degree</strong></p>
 <p><img src="docs/screenshots/fulldome180degree_120px.png" alt="Fulldome" /></p>
 <p>This image projection shows a fullframe 180° fisheye image that is also known as a domemaster image.</p>
 <hr />
-<p><strong>Gear VR</strong>  
-</p>
+<p><strong>Gear VR</strong></p>
 <p><img src="docs/screenshots/gearvrMono_38px.png" alt="Gear VR" /></p>
 <p>This image projection shows a Gear VR mono cubic image that is a special variation on the horizontal strip format.</p>
 <p>The Gear VR mono cubic faces are located in the format:</p>
@@ -455,8 +477,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Cross Cubemap</strong>  
-</p>
+<p><strong>Horizontal Cross Cubemap</strong></p>
 <p><img src="docs/screenshots/horizontalCross_120px.png" alt="Horizontal Cross Cubemap" /></p>
 <p>The horizontal cross faces are located in the format:</p>
 <table>
@@ -471,8 +492,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Strip Cubemap</strong>  
-</p>
+<p><strong>Horizontal Strip Cubemap</strong></p>
 <p><img src="docs/screenshots/horizontalStrip_38px.png" alt="Horizontal Strip Cubemap" /></p>
 <p>The horizontal strip faces are located in the format:</p>
 <table>
@@ -481,8 +501,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Horizontal Tee Cubemap</strong>  
-</p>
+<p><strong>Horizontal Tee Cubemap</strong></p>
 <p><img src="docs/screenshots/horizontalTee_120px.png" alt="Horizontal Tee Cubemap" /></p>
 <p>The horizontal tee faces are located in the format:</p>
 <table>
@@ -497,18 +516,16 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Equirectangular, Latitude/Longitude,  Spherical</strong>  
-</p>
+<p><strong>Equirectangular, Latitude/Longitude,  Spherical</strong></p>
 <p><img src="docs/screenshots/latlong_120px.png" alt="equirectangular" /></p>
 <p>This image projection shows a 2:1 aspect ratio 360° x 180° spherical panorama.</p>
 <hr />
 <p><strong>LG360 Camera</strong></p>
 <p><img src="docs/screenshots/lg360_120px.png" alt="LG360" /></p>
-<p>The LG360 Camera camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.</p>
+<p>The LG360 Camera camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360° live action video.</p>
 <p>The camera saves the raw unstitched video in a side by side face arrangement at 30 frame per second.</p>
 <hr />
-<p><strong>Mental Ray Cube 1</strong>  
-</p>
+<p><strong>Mental Ray Cube 1</strong></p>
 <p><img src="docs/screenshots/mentalRayCube1_38px.png" alt="Mental Ray Cube 1" /></p>
 <p>The image projection shows a the mental ray <code>mib_lookup_cube1</code> horizontal strip image format.</p>
 <p>The faces are located in the format:</p>
@@ -533,29 +550,26 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Mirrorball</strong>  
-</p>
+<p><strong>Mirrorball</strong></p>
 <p><img src="docs/screenshots/mirrorball_120px.png" alt="Mirrorball" /></p>
 <p>A mirrorball or ball map image is what you get when you photograph a chrome sphere. This image projection is common in the visual effects industry when a quick set lighting reference and environment map is needed.</p>
 <hr />
 <p><strong>Ricoh Theta S Camera</strong></p>
 <p><img src="docs/screenshots/ricohThetaS_120px.png" alt="Ricoh Theta S" /></p>
-<p>The Ricoh Theta S camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.</p>
+<p>The Ricoh Theta S camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360° live action video.</p>
 <p>The camera saves the raw unstitched video in a side by side face arrangement to a 1920x1080 pixel sized video format at 30 frame per second.</p>
 <hr />
 <p><strong>Samsung Gear 360 Camera</strong></p>
 <p><img src="docs/screenshots/samsung_gear_360_120px.png" alt="Samsung Gear 360" /></p>
-<p>The Samsung Gear 360 camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360&deg; live action video.</p>
+<p>The Samsung Gear 360 camera has two fisheye lenses (facing forwards and backwards) that film a scene in panoramic 360° live action video.</p>
 <p>The camera saves the raw unstitched video in a side by side face arrangement at 30 frame per second.</p>
 <hr />
-<p><strong>Starglobe / Quadsphere</strong>  
-</p>
+<p><strong>Starglobe / Quadsphere</strong></p>
 <p><img src="docs/screenshots/quadsphere_120px.png" alt="Quadsphere" /></p>
 <p>The Starglobe / quadsphere format is a custom polygon sphere that avoids the issues of pinched polar regions by using an all quad polygon topology. This is the same type of geometry that is used as the Mudbox primitive sphere shape.</p>
 <p><img src="docs/screenshots/quadsphere_mesh.png" alt="Quadsphere" /></p>
 <hr />
-<p><strong>Vertical Cross Cubemap</strong>  
-</p>
+<p><strong>Vertical Cross Cubemap</strong></p>
 <p><img src="docs/screenshots/verticalCross_120px.png" alt="Vertical Cross Cubemap " /></p>
 <p>The vertical cross faces are located in the format:</p>
 <table>
@@ -573,8 +587,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Vertical Strip Cubemap</strong>  
-</p>
+<p><strong>Vertical Strip Cubemap</strong></p>
 <p><img src="docs/screenshots/verticalStrip_120px.png" alt="Vertical Strip Cubemap  " /></p>
 <p>The vertical strip faces are located in the format:</p>
 <table>
@@ -598,8 +611,7 @@ by Andrew Hazelden</p>
   </tr>
 </table>
 <hr />
-<p><strong>Vertical Tee Cubemap</strong>  
-</p>
+<p><strong>Vertical Tee Cubemap</strong></p>
 <p><img src="docs/screenshots/verticalTee_120px.png" alt="Vertical Tee Cubemap" /></p>
 <p>The vertical tee faces are located in the format:</p>
 <table>
@@ -616,16 +628,23 @@ by Andrew Hazelden</p>
      <td>blank</td> <td>top</td> <td>blank</td>
   </tr>
 </table>
+<p><strong>YouTube Cubemap 3x2</strong></p>
+<p><img src="docs/screenshots/youtube_cubemap3x2_120px.png" alt="YouTubeCubemap 3x2" /></p>
+<p>The YouTube Cubemap 3x2 faces are located in the format:</p>
+<table>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom (rotated 270&deg;)</td> <td>back (rotated 90&deg;)</td> <td>top (rotated 270&deg;)</td>
+  </tr>
+</table>
 <hr />
 <h2>Closing Notes</h2>
 <p>I hope you find these mesh files useful for your VR/Pano/Fulldome projects. If you have any questions, feel free to contact me via email or twitter.</p>
 <p>Cheers,<br />
 Andrew Hazelden</p>
-<p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a> <br />
-Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a><br />
-Twitter: <a href="https://twitter.com/andrewhazelden">@andrewhazelden</a><br />
-Google+: <a href="https://plus.google.com/+AndrewHazelden">https://plus.google.com/+AndrewHazelden</a></p>
-
+<p>Email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a><br />
+Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

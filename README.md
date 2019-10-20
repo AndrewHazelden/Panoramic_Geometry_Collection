@@ -1,13 +1,13 @@
 # Panoramic Geometry Collection #
 
-**Version 3.4** Released 2017-01-01 
+**Version 4** Released 2019-10-20  
 by Andrew Hazelden
 
 ## Overview ##
 
 This is a collection of panoramic meshes that can be used to preview equirectangular, mirrorball, fulldome, cylindrical, and cubic panoramas. The meshes were created as part of the development process for the Domemaster3D shader's [DomeViewer Tool](https://code.google.com/p/domemaster-stereo-shader/wiki/DomeViewer).
 
-If you need a tool to convert imagery between the different cubic formats you should try out my [Domemaster Photoshop Actions Pack](http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/), or for video clips you can explore my [Domemaster Fusion Macros](http://www.andrewhazelden.com/blog/downloads/domemaster-fusion-macros/) toolset.
+If you need a tool to convert imagery between the different cubic formats you should try out my (free) [Domemaster Photoshop Actions Pack](http://www.andrewhazelden.com/blog/2012/11/domemaster-photoshop-actions-pack/), or for video clips you can explore my (free) [KartaVR for Resolve/Fusion](http://www.andrewhazelden.com/projects/kartavr/docs/) toolset.
 
 The panoramic mesh files are released under a GPL v3 license and are available in Maya and OBJ formats:
 
@@ -63,6 +63,8 @@ The following files are included:
 > - `verticalStripCube_mesh.obj`
 > - `verticalTeeCube_mesh.ma`
 > - `verticalTeeCube_mesh.obj`
+> - `youtube_cubemap3x2_mesh.obj`
+
                      
 
 ## Image Projections ##
@@ -416,6 +418,20 @@ The vertical tee faces are located in the format:
   </tr>
 </table>
 
+**YouTube Cubemap 3x2**  
+
+![YouTubeCubemap 3x2](docs/screenshots/youtube_cubemap3x2_120px.png)
+
+The YouTube Cubemap 3x2 faces are located in the format:
+<table>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom (rotated 270&deg;)</td> <td>back (rotated 90&deg;)</td> <td>top (rotated 270&deg;)</td>
+  </tr>
+</table>
+
 ----------
 
 ## Closing Notes ##
@@ -427,5 +443,3 @@ Andrew Hazelden
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)   
 Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)  
-Twitter: [@andrewhazelden](https://twitter.com/andrewhazelden)  
-Google+: [https://plus.google.com/+AndrewHazelden](https://plus.google.com/+AndrewHazelden)
